@@ -43,6 +43,8 @@
         delay: 10
         sleep: 5
         timeout: 300
+      vars:
+        ansible_user: ec2-user
       loop: "{{ ec2.instances }}"
 
 - name: Configure instance(s)
